@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+       backgroundImage: {
+        'Dust-Clouds-of-the-Pacman-Nebula': "url('/img/bg3.jpg')",
+      }
+    },
   },
   plugins: [],
 }
