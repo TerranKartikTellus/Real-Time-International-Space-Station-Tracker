@@ -228,7 +228,7 @@ function Map({lat,long,lat2,long2}){
   zoom: 0.6,
   center: [lat,long],
   width: "500px",
-  height: "500px",
+  height: "400px",
   projection: 'naturalEarth'
 })
   return(
@@ -238,7 +238,7 @@ function Map({lat,long,lat2,long2}){
     initialViewState={viewport}
         center={[lat,long]}
         {...viewport}
-        style={{width: '500px' , height: '500px' }}
+        style={{width: '500px' , height: '400px' }}
         mapStyle="mapbox://styles/mapbox/satellite-v9"
          onViewportChange={viewport => setViewport({viewport})}
          
