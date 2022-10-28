@@ -34,12 +34,12 @@ let data ={
     <div className="w-[300px] bg-black/80 fixed left-0 top-[72px]  h-full "><SideNav active={'data'}></SideNav></div>
     <div className="bg-black/80 w-[1236px] h-[690px] fixed bottom-0 right-0">
       <div className="mt-5 text-3xl font-extralight tracking-widest text-center z-40 text-white  ">Data Inflow</div>
-      <Form></Form>
+      <Form d={d}></Form>
     </div>
   </div>)
 }
 
-function Form(){
+function Form({d}){
 const mapContainer = useRef(null);
 const map = useRef(null);
 
@@ -136,7 +136,7 @@ setZoom(map2.current.getZoom().toFixed(2));
            console.log('Success to indert data to mongoDB  /pages/edit');
            toast.success('Successful',{duration: 4000,style: {opacity: 0.4},})
            Reset();
-           Router.reload();
+           Router.push(`/logo/dashboard/${d.length}`)
           }
           else {
             console.log('Failed to indert data to mongoDB  /pages/edit');

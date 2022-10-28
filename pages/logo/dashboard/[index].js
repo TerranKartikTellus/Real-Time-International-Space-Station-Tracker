@@ -27,7 +27,7 @@ let data ={
   <div className="w-full">
     <div className="bg-black/90 w-full px-10 py-4 fixed top-0 bg-opacity-90 z-50"><Nav d={d}  name={map.fname}></Nav></div>
     <div className="w-[300px] bg-black/80 fixed left-0 top-[72px]  h-full "><SideNav active={'dash'}></SideNav></div>
-    <div className="bg-black/90 w-[1236px] h-[690px] fixed bottom-0 right-0 p-10 z-40">
+    <div className="bg-black/90 w-[1236px] h-[690px] fixed bottom-0 right-0 px-10 z-40 overflow-y-auto">
     
       {d &&  <Dash d={map}></Dash>}
       {!d && <div className="h-full w-full flex flex-col items-center justify-center"><div className="w-16 h-16 bg-white animate-spin"></div></div>}     
@@ -109,10 +109,10 @@ function Dash({d}){
             <div className="flex  flex-row border-b-[1px] border-b-white/70 items-center justify-between py-14">
               <Map lat={d.lati} long={d.long} lat2={d.lati2} long2={d.long2}></Map>
             </div>
-            <div className="pt-4 flex flex-row items-center justify-start space-x-4">
+            <div className="pt-4 flex flex-col items-center justify-start space-y-1">
               <Link href="/logo/dashboard" className="" >Update</Link> 
-              <div className="flex flex-row items-center justify-start space-x-1"><div>Location 1 :</div> <div className="bg-fuchsia-600 w-6 h-6 text-transparent">.</div></div>
-              <div className="flex flex-row items-center justify-start space-x-1"><div>Location 2 :</div> <div className="bg-pink-700 w-6 h-6 text-transparent">.</div></div>
+              <div className="flex flex-row items-center justify-start space-x-1"><div>Location 1 : [ {d.lati}, {d.long}   ]</div> <div className="bg-fuchsia-600 w-6 h-6 text-transparent">.</div></div>
+              <div className="flex flex-row items-center justify-start space-x-1"><div>Location 2 : [ {d.lati2}, {d.long2}   ]</div> <div className="bg-pink-700 w-6 h-6 text-transparent">.</div></div>
             </div>
           </div>
 
