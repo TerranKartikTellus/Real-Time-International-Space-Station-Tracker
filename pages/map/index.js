@@ -1,10 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import HeadTag from '../components/head'
+
+import HeadTag from '/components/head'
 import axios from "axios"
 import { useEffect, useState } from 'react'
-import Map from '../components/maps/mapDark'
+import Map from '/components/maps/mapDark'
 
 export default function Home() {
 const [e,sete] = useState();
