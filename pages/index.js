@@ -6,7 +6,7 @@ import SideNav from "/components/SideNav"
 export default function Dashb(){
 
 let data ={
-  name: "Vineet",
+  name: "",
 }
 
   return(
