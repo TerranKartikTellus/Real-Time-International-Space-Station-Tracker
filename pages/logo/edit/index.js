@@ -235,7 +235,7 @@ setZoom(map2.current.getZoom().toFixed(2));
             </div>
             <div ref={mapContainer} onClick={(e)=>{
               setSchema({...schema,   lati: lat, long:lng})
-            }} className="map-container" />
+            }} className="map-container z-30" />
           </div>
 
           <div>
@@ -244,7 +244,7 @@ setZoom(map2.current.getZoom().toFixed(2));
             </div>
             <div ref={mapContainer2} onClick={(e)=>{
               setSchema({...schema,   lati2: lat2, long2:lng2})
-            }} className="map-container " ></div>
+            }} className="map-container  z-30" ></div>
           </div>
      </div> 
      
