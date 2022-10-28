@@ -3,7 +3,7 @@ import Nav from "/components/Nav"
 import SideNav from "/components/SideNav"
 
 
-export default function Dashb(){
+export default function Dashb1(){
 
 let data ={
   name: "",

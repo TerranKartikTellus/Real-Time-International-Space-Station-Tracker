@@ -15,7 +15,7 @@ import mapboxgl from 'mapbox-gl';
 mapboxgl.accessToken = 'pk.eyJ1IjoidGVycmFua2FydGlrdGVsbHVzIiwiYSI6ImNsNmdqd3ByYzE4NDQzcG4yeWlpbHA2d3YifQ.rnn_JDtEZI7vnmlBMM6U3g';
 
 
-export default function Dashb({d}){
+export default function Dashb3({d}){
 
 let data ={
   name: "Vineet",
