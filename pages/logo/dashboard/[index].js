@@ -106,7 +106,7 @@ function Dash({d}){
               {/* <img src="/svg/dustbin.svg" className="w-8 h-8"></img> */}
               <div className="text-white uppe font-medium text-xl tracking-widest">User accessing application from</div>
             </div>
-            <div className="flex  flex-row border-b-[1px] border-b-white/70 items-center justify-between py-14">
+            <div className="flex  flex-row border-b-[1px] border-b-white/70 items-center justify-between p3">
               <Map lat={d.lati} long={d.long} lat2={d.lati2} long2={d.long2}></Map>
             </div>
             <div className="pt-4 flex flex-col items-center justify-start space-y-1">
@@ -227,8 +227,8 @@ function Map({lat,long,lat2,long2}){
   longitude: long,
   zoom: 0.6,
   center: [lat,long],
-  width: "100%",
-  height: "100%",
+  width: "500px",
+  height: "500px",
   projection: 'naturalEarth'
 })
   return(
@@ -238,7 +238,7 @@ function Map({lat,long,lat2,long2}){
     initialViewState={viewport}
         center={[lat,long]}
         {...viewport}
-        style={{width: '500px' , height: '300px' }}
+        style={{width: '500px' , height: '500px' }}
         mapStyle="mapbox://styles/mapbox/satellite-v9"
          onViewportChange={viewport => setViewport({viewport})}
          
