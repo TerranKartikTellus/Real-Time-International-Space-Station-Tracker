@@ -119,7 +119,7 @@ setZoom(map2.current.getZoom().toFixed(2));
             document.querySelector(".activeUsers").value!=''
             ){
          const response = await fetch(
-                 '/api/dash',
+                 '/api/dash/add',
                  {
                    method: 'POST',
                          body: JSON.stringify(
@@ -131,6 +131,7 @@ setZoom(map2.current.getZoom().toFixed(2));
                               }
                 );
          const jsonResponse = await response.json();
+        //  console.log('Json Resp: ',jsonResponse);
          console.log(jsonResponse); 
          if(jsonResponse.msg == 'Insertion Completed'){
            console.log('Success to indert data to mongoDB  /pages/edit');
